@@ -1,0 +1,29 @@
+//extend
+.btn-gral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    padding: 4px 30px;
+    background-color: $mainColor;
+    border-radius: 4px;
+}
+.btn-discount{
+    @extend .btn-gral;
+    background-color: $black;
+    &:hover{
+        color: $mainColor;
+    }
+}
+.contenedor-gral{
+    width: 100%;
+    padding: 20px 60px;
+    margin: auto;
+    background-image: url(../img/descarga.png);
+}
+.contenedor-secondary{
+    @extend .contenedor-gral;
+    background-image: url(../img/botines.jpg);
+}
+
+//mixins

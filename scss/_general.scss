@@ -1,0 +1,59 @@
+* {
+    font-family: $mainFont;
+}
+
+#navbarNav {
+    .fuentesNav {
+        font-size: $textMd;
+        padding-left: 3rem;
+    }
+
+    /*Subrayado*/
+
+
+    .menu {
+        text-decoration: none;
+        background-image: linear-gradient(yellow, yellow);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+    .menu:hover,
+    .menu:focus {
+        background-size: 100% 2px;
+    }
+}
+
+.fuentesNav {
+    font-size: 3rem;
+    padding-left: 3rem;
+}
+
+header {
+    border-bottom: solid 5px $mainColor;
+}
+
+.fondoImg {
+    background-image: url(../img/descarga.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tituloPrincipal {
+    color: $mainColor !important;
+}
+
+.colorBtn {
+    background-color: $mainColor;
+    color: $white;
+    font-size: $textMd;
+    margin: 5px;
+
+    &:hover {
+        background-color: yellow;
+        color: white;
+    }
+}
